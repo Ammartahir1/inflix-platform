@@ -44,7 +44,7 @@ export default function NewTenantPage() {
     setLoading(true)
     setError('')
     try {
-      const result = await api.post('/api/admin/tenants', form)
+      const result = await api.post('/api/admin/tenants', form) as { tempPassword: string }
       if (!form.adminPassword) {
         setCreatedPassword(result.tempPassword)
         setLoading(false)
