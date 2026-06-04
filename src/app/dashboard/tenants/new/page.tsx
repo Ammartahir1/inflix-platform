@@ -12,7 +12,7 @@ export default function NewTenantPage() {
   const router = useRouter()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
-  const [form, setForm] = useState({ name: '', slug: '', email: '', phone: '', password: '', confirmPassword: '' })
+  const [form, setForm] = useState({ name: '', slug: '', email: '', phone: '', adminName: '', password: '', confirmPassword: '' })
   const [errors, setErrors] = useState<Record<string, string>>({})
 
   function update(field: string, value: string) {
@@ -50,6 +50,7 @@ export default function NewTenantPage() {
         slug: form.slug,
         email: form.email,
         phone: form.phone || undefined,
+        adminName: form.adminName || undefined,
         adminPassword: form.password,
       })
       router.push('/dashboard/tenants')
@@ -106,7 +107,14 @@ export default function NewTenantPage() {
           </div>
 
           <div className="card p-5 flex flex-col gap-4">
-            <p className="text-xs font-semibold text-white/40 uppercase tracking-wide">Admin Login Password</p>
+            <p className="text-xs font-semibold text-white/40 uppercase tracking-wide">Admin Account</p>
+            <Input
+              label="Admin Name (optional)"
+              placeholder="e.g. John Smith"
+              value={form.adminName}
+              onChange={(e) => update('adminName', e.target.value)}
+              hint="Defaults to 'Business Name Admin' if left blank"
+            />
             <Input
               label="Password"
               type="password"

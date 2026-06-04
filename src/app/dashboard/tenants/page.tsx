@@ -47,7 +47,7 @@ export default function TenantsPage() {
       <div className="flex-1 overflow-y-auto p-6">
         {loading
           ? <p className="text-white/40 text-sm">Loading tenants…</p>
-          : <TenantsTable tenants={filtered} />}
+          : <TenantsTable tenants={filtered} onDeleted={(id) => setTenants((prev) => prev.filter((t) => t.id !== id))} />}
       </div>
     </div>
   )
