@@ -9,6 +9,7 @@ import { Logo } from '@/components/ui/Logo'
 const NAV = [
   { href: '/dashboard', label: 'Overview', icon: '▦' },
   { href: '/dashboard/tenants', label: 'Tenants', icon: '🏢' },
+  { href: '/dashboard/applications', label: 'Applications', icon: '📋' },
   { href: '/dashboard/settings', label: 'Settings', icon: '⚙' },
 ]
 
