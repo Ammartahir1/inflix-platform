@@ -106,7 +106,7 @@ export default function TenantDetailPage({ params }: { params: { id: string } })
     <div className="flex flex-col flex-1 overflow-hidden">
       <Topbar
         title={tenant.name}
-        subtitle={`${tenant.slug}.inflix.co.uk`}
+        subtitle={`${tenant.slug}.inflix.uk`}
         action={
           <Link href="/dashboard/tenants">
             <Button variant="ghost" size="sm">← Tenants</Button>
@@ -150,7 +150,7 @@ export default function TenantDetailPage({ params }: { params: { id: string } })
           <div className="flex items-center justify-between">
             <span className="text-sm text-white/60">Store URL</span>
             <span className="font-mono text-xs text-gold">
-              {tenant.slug}.inflix.co.uk
+              {tenant.slug}.inflix.uk
             </span>
           </div>
         </div>

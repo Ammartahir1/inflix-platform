@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useRouter } from 'next/navigation'
 import { Table, Thead, Tbody, Th, Td, Tr } from '@/components/ui/Table'
@@ -32,7 +32,7 @@ export function TenantsTable({ tenants }: { tenants: Tenant[] }) {
               </Td>
               <Td>
                 <span className="font-mono text-xs text-white/60 bg-white/10 px-2 py-0.5 rounded">
-                  {t.slug}.inflix.co.uk
+                  {t.slug}.inflix.uk
                 </span>
               </Td>
               <Td>

@@ -1,4 +1,4 @@
-import { Topbar } from '@/components/platform/Topbar'
+﻿import { Topbar } from '@/components/platform/Topbar'
 
 export default function SettingsPage() {
   return (
@@ -14,7 +14,7 @@ export default function SettingsPage() {
               <p className="text-xs text-white/40 mt-0.5">Tenant stores are served under this domain</p>
             </div>
             <span className="font-mono text-xs text-gold bg-gold/10 px-3 py-1 rounded-lg">
-              inflix.co.uk
+              inflix.uk
             </span>
           </div>
           <div className="flex items-center justify-between py-2 border-b border-white/5">
@@ -23,7 +23,7 @@ export default function SettingsPage() {
               <p className="text-xs text-white/40 mt-0.5">Backend service endpoint</p>
             </div>
             <span className="font-mono text-xs text-white/50 bg-white/5 px-3 py-1 rounded-lg">
-              api.inflix.co.uk
+              api.inflix.uk
             </span>
           </div>
           <div className="flex items-center justify-between py-2">
@@ -32,7 +32,7 @@ export default function SettingsPage() {
               <p className="text-xs text-white/40 mt-0.5">This app</p>
             </div>
             <span className="font-mono text-xs text-white/50 bg-white/5 px-3 py-1 rounded-lg">
-              platform.inflix.co.uk
+              platform.inflix.uk
             </span>
           </div>
         </div>

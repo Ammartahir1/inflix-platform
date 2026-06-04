@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
@@ -43,12 +43,12 @@ export default function LoginPage() {
       <div className="w-full max-w-sm">
         <div className="flex flex-col items-center mb-8">
           <Logo size="xl" />
-          <p className="text-white/40 text-sm mt-2">Platform — Super Admin</p>
+          <p className="text-white/40 text-sm mt-2">Platform â€” Super Admin</p>
         </div>
 
         <form onSubmit={handleSubmit} className="card p-6 flex flex-col gap-4">
-          <Input label="Email" type="email" placeholder="superadmin@inflix.co.uk" value={email} onChange={(e) => setEmail(e.target.value)} required autoFocus />
-          <Input label="Password" type="password" placeholder="••••••••" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          <Input label="Email" type="email" placeholder="superadmin@inflix.uk" value={email} onChange={(e) => setEmail(e.target.value)} required autoFocus />
+          <Input label="Password" type="password" placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢" value={password} onChange={(e) => setPassword(e.target.value)} required />
           {error && <p className="text-sm text-red-400">{error}</p>}
           <Button type="submit" loading={loading} size="lg" className="w-full mt-1">Sign In</Button>
         </form>
